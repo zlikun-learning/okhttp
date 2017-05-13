@@ -1,9 +1,13 @@
 package com.zlikun.lib;
 
 import com.zlikun.lib.servlet.HelloServlet;
+import com.zlikun.lib.servlet.LoginServlet;
+import com.zlikun.lib.servlet.RedirectServlet;
+import com.zlikun.lib.servlet.ResourceServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.session.HashSessionIdManager;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHandler;
 
 /**
@@ -29,10 +33,16 @@ public class ServletHandlerMain {
         http.setIdleTimeout(30000);
         server.addConnector(http);
 
-        // Set a handler
-        ServletHandler handler = new ServletHandler();
-        server.setHandler(handler);
-        handler.addServletWithMapping(HelloServlet.class, "/hello");
+        // set servlet context
+        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+        context.setContextPath("/");
+        server.setHandler(context);
+
+        // add servlets
+        context.addServlet(HelloServlet.class, "/hello");
+        context.addServlet(LoginServlet.class, "/login");
+        context.addServlet(ResourceServlet.class, "/resource");
+        context.addServlet(RedirectServlet.class, "/link");
 
         // Start the server
         server.dumpStdErr();
