@@ -12,6 +12,7 @@
     <modules>
         <module>zlikun-lib-okhttp-usage</module>
         <module>zlikun-lib-okhttp-webapp</module>
+        <module>zlikun-lib-okhttp-login</module>
     </modules>
 
     <properties>
