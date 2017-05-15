@@ -34,8 +34,10 @@ public class LoginServlet extends HttpServlet {
         String token = UUID.randomUUID().toString() ;
         logger.info("访问登录请求，生成Token：{}" ,token);
         req.getSession().setAttribute("token" ,token);
-        resp.addHeader("Content-Type" ,"application/json");
-        resp.getWriter().printf("{\"token\":\"%s\"}" ,token) ;
+//        resp.addHeader("Content-Type" ,"application/json");
+//        resp.getWriter().printf("{\"token\":\"%s\"}" ,token) ;
+        resp.addHeader("Content-Type" ,"text/plain");
+        resp.getWriter().print(token);
     }
 
     /**

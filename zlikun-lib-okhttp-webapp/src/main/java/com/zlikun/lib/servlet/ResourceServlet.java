@@ -50,7 +50,7 @@ public class ResourceServlet extends HttpServlet {
 
         String name = req.getParameter("name") ;
 
-        resp.getWriter().printf("{\"user\":\"%s\",\"resource\":\"%s\"}" ,name) ;
+        resp.getWriter().printf("{\"user\":\"%s\",\"resource\":\"%s\"}" ,loginUser ,name) ;
 
     }
 }
