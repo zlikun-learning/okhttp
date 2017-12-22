@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>zlikun-lib-okhttp-usage</artifactId>
+    <artifactId>okhttp-login</artifactId>
 
 
 </project>

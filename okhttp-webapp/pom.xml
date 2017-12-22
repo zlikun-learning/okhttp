@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>zlikun-lib-okhttp-webapp</artifactId>
+    <artifactId>okhttp-webapp</artifactId>
 
     <properties>
         <jetty.version>9.2.21.v20170120</jetty.version>

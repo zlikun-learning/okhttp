@@ -10,14 +10,14 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>zlikun-lib-okhttp-usage</module>
-        <module>zlikun-lib-okhttp-webapp</module>
-        <module>zlikun-lib-okhttp-login</module>
+        <module>okhttp-usage</module>
+        <module>okhttp-webapp</module>
+        <module>okhttp-login</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-            <version>3.7.0</version>
+            <version>3.9.1</version>
         </dependency>
 
     </dependencies>
