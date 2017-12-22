@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zlikun.lib</groupId>
-    <artifactId>zlikun-lib-okhttp</artifactId>
+    <artifactId>okhttp</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
