@@ -1,14 +1,13 @@
-package com.zlikun.lib;
+package com.zlikun.learning;
 
-import com.zlikun.lib.servlet.HelloServlet;
-import com.zlikun.lib.servlet.LoginServlet;
-import com.zlikun.lib.servlet.RedirectServlet;
-import com.zlikun.lib.servlet.ResourceServlet;
+import com.zlikun.learning.servlet.HelloServlet;
+import com.zlikun.learning.servlet.LoginServlet;
+import com.zlikun.learning.servlet.RedirectServlet;
+import com.zlikun.learning.servlet.ResourceServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.session.HashSessionIdManager;
 import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHandler;
 
 /**
  * Jetty实现HTTP请求(基于Servlet实现)类

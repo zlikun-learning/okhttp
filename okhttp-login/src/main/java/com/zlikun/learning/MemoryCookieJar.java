@@ -1,4 +1,4 @@
-package com.zlikun.lib;
+package com.zlikun.learning;
 
 import okhttp3.Cookie;
 import okhttp3.CookieJar;
@@ -15,9 +15,9 @@ import java.util.concurrent.ConcurrentMap;
  * @author zlikun <zlikun-dev@hotmail.com>
  * @date 2017/5/15 21:49
  */
-class MemeryCookieJar implements CookieJar {
+class MemoryCookieJar implements CookieJar {
 
-    private Logger logger = LoggerFactory.getLogger(MemeryCookieJar.class) ;
+    private Logger logger = LoggerFactory.getLogger(MemoryCookieJar.class) ;
 
     // 使用ConcurrentMap存储cookie信息，因为数据在内存中，所以只在程序运行阶段有效，程序结束后即清空
     private ConcurrentMap<String, List<Cookie>> storage = new ConcurrentHashMap<>();

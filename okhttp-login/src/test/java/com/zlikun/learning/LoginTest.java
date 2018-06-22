@@ -1,4 +1,4 @@
-package com.zlikun.lib;
+package com.zlikun.learning;
 
 import okhttp3.*;
 import org.junit.Assert;
@@ -28,7 +28,7 @@ public class LoginTest {
                 .connectTimeout(1000, TimeUnit.MILLISECONDS)
                 .writeTimeout(500, TimeUnit.MILLISECONDS)
                 .readTimeout(500, TimeUnit.MILLISECONDS)
-                .cookieJar(new MemeryCookieJar())
+                .cookieJar(new MemoryCookieJar())
                 .build();
 
     }
